@@ -27,30 +27,30 @@ validate and document the service.
   `SourceItem`, `SourceClient`, `DataFetcher`, reporting windows, filtering,
   classification, five-section rendering, and word-count enforcement.
 - [ ] Inventory the deployment target and select the scheduler mechanism that
-  supports a weekly Friday-afternoon run in the user's local timezone.
+  supports a weekly Friday-afternoon run in the user's local timezone. (#1)
 - [ ] Compare candidate APIs/SDKs for Jira, GitHub, Google Calendar, the
-  meeting-notes system, and the email draft provider.
+  meeting-notes system, and the email draft provider. (#2)
 - [ ] Decide how the authenticated user's default Jira project, current-login
   GitHub repository, primary calendar, standard notes location, and email
-  contacts are resolved without a user-facing multi-resource configuration UI.
+  contacts are resolved without a user-facing multi-resource configuration UI. (#3)
 - [ ] Record provider decisions, API versions, required scopes, rate limits,
   timeout limits, retry behavior, and known privacy markers as an
-  implementation decision record.
+  implementation decision record. (#4)
 - [ ] Define the configuration schema for credentials, timezone, Friday run
   time, resource resolution, recipient override, word limit, retry policy, and
-  optional-source behavior.
+  optional-source behavior. (#5)
 - [ ] Define the approved secret/environment mechanism and add safe example
-  configuration with placeholders only.
+  configuration with placeholders only. (#6)
 - [ ] Define the run/audit event schema: reporting period, run timestamp,
-  source status, item counts, draft identifier, and sanitized failure details.
+  source status, item counts, draft identifier, and sanitized failure details. (#7)
 - [ ] Add or update ignore rules so local environment files, tokens, OAuth
-  caches, generated artifacts, and logs cannot be committed.
+  caches, generated artifacts, and logs cannot be committed. (#8)
 - [ ] Create the package/module layout for adapters, orchestration, scheduling,
   delivery, configuration, and audit logging while keeping report logic
-  provider-independent.
+  provider-independent. (#9)
 - [ ] **Setup gate:** obtain approval for the provider/runtime decision record,
   configuration schema, permission list, and deployment assumptions before
-  starting Integration.
+  starting Integration. (#10)
 
 ## Phase 2: Core Features
 
